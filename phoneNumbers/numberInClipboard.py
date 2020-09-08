@@ -1,5 +1,5 @@
 #! python3
-# numberOnClipboard.py - Finds phone numbers on the clipboard and copies them to the clipboard
+# numberInClipboard.py - Finds phone numbers on the clipboard and copies them to the clipboard
 # Usage: call the program with a country as the first argument
 # Example: >>> numberOnClipboard.py germany
 
@@ -23,15 +23,13 @@ argumentOne = ""
 try:
     argumentOne = sys.argv[1]
 except IndexError:
-    print("No argument given. Try again with a country as an argument")
-    exit()
+    exit("No argument given. Try again with a country as an argument")
 
 if(argumentOne in countryDict):
     #Create regex object
     regexCompile = re.compile(countryDict[argumentOne], re.VERBOSE)
 else:
-    print("No number format for that country found")
-    exit()
+    exit("No number format for that country found")
 
 
 
@@ -44,7 +42,7 @@ for groups in regexCompile.findall(text):
 
 if len(matches) > 0:
     pyperclip.copy(' -+- '.join(matches))
-    print("Phone numbers found:")
+    print("Phone number(s) found:")
     print('\n'.join(matches))
 else:
     print('No phone numbers or email addresses found.')
