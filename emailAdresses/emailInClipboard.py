@@ -25,4 +25,4 @@ if len(matches) > 0:
     print("Email address(es) found:")
     print('\n'.join(matches))
 else:
-    print('No email addresses found.')
+    print('No email address found.')

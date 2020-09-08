@@ -45,4 +45,4 @@ if len(matches) > 0:
     print("Phone number(s) found:")
     print('\n'.join(matches))
 else:
-    print('No phone numbers found.')
+    print('No phone number found.')
