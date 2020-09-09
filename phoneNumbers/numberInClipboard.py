@@ -1,6 +1,6 @@
 #! python3
 # numberInClipboard.py - Finds phone numbers on the clipboard and copies them to the clipboard
-# Usage: call the program with a country as the first argument
+# Usage: Copy some text and call the program with a country as the first argument
 # Example: >>> numberOnClipboard.py germany
 
 import pyperclip, re, sys
