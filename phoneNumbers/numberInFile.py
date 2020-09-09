@@ -60,6 +60,8 @@ for groups in regexCompile.findall(openedContent):
     phoneNumber = groups[0]
     matches.append(phoneNumber)
 
+openedFile.close()
+
 if len(matches) > 0:
     pyperclip.copy(' -+- '.join(matches))
     print("Phone number(s) found:")

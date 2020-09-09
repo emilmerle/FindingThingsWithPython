@@ -6,7 +6,7 @@
 import pyperclip, re
 
 # Create alliteration regex.
-alliRegex = re.compile(r"((\s)(\w)[a-z]*\s\3[a-z]*((\s\3[a-z]*)?)*)")
+alliRegex = re.compile(r"((\s)(\w)\w*\s\3\w*((\s\3\w*)?)*)", re.IGNORECASE)
 
 # Find matches in clipboard text.
 text = " " + str(pyperclip.paste())
@@ -20,4 +20,4 @@ if len(matches) > 0:
     print("Alliteration(s) found:")
     print('\n'.join(matches))
 else:
-    print('No alliterations found.')
+    print('No alliteration found.')
