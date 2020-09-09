@@ -1,7 +1,7 @@
 #! python3
-# emailInFile.py - Finds email addresses in a given file and copies them to the clipboard
+# alliterationInFile.py - Finds alliterations in a given file and copies them to the clipboard
 # Usage: call the program with a file path as the first argument
-# Example: >>> emailInFile.py C:\\Users\\ExampleUser\\Documents\\addresses.txt
+# Example: >>> alliterationInFile.py C:\\Users\\ExampleUser\\Documents\\aRealText.txt
 
 import pyperclip, re, sys, os
 
@@ -29,24 +29,19 @@ if(os.path.exists(argumentOne) and os.path.isfile(argumentOne)):
 else:
     exit("Given file does not exist: " + argumentOne)
 
-# Create email regex.
-emailRegex = re.compile(r'''(
-    [a-zA-Z0-9._%+-]+ # username
-    @ # @ symbol
-    [a-zA-Z0-9.-]+ # domain name
-    (\.[a-zA-Z]{2,4}) # dot-something
-    )''', re.VERBOSE)
+# Create alliteration regex.
+alliRegex = re.compile(r"((\s)(\w)\w*\s\3\w*((\s\3\w*)?)*)", re.IGNORECASE)
 
 matches = []
-for groups in emailRegex.findall(openedContent):
-    emails = groups[0]
-    matches.append(emails)
+for groups in alliRegex.findall(openedContent):
+    alliterations = groups[0][1:]
+    matches.append(alliterations)
 
 openedFile.close()
 
 if len(matches) > 0:
     pyperclip.copy(' -+- '.join(matches))
-    print("Email address(es) found:")
+    print("Alliteration(s) found:")
     print('\n'.join(matches))
 else:
-    print('No email address found.')
+    print('No alliteration found.')
