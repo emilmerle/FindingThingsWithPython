@@ -9,7 +9,6 @@ import pyperclip, re, sys, os
 countryDict = {}
 
 #Create phone regex for country specific number format and add it to countryDict
-
 germany = r'''(
     (\d{3}|\(\d{3}\))? # area code (optional)
     (\s|-|\.|/)? # separator (optional)

@@ -5,14 +5,6 @@
 
 import pyperclip, re, sys, os
 
-# Create email regex.
-emailRegex = re.compile(r'''(
-    [a-zA-Z0-9._%+-]+ # username
-    @ # @ symbol
-    [a-zA-Z0-9.-]+ # domain name
-    (\.[a-zA-Z]{2,4}) # dot-something
-    )''', re.VERBOSE)
-
 #Check if sys.argv[1] is given
 argumentOne = ""
 try:
@@ -37,6 +29,13 @@ if(os.path.exists(argumentOne) and os.path.isfile(argumentOne)):
 else:
     exit("Given file does not exist: " + argumentOne)
 
+# Create email regex.
+emailRegex = re.compile(r'''(
+    [a-zA-Z0-9._%+-]+ # username
+    @ # @ symbol
+    [a-zA-Z0-9.-]+ # domain name
+    (\.[a-zA-Z]{2,4}) # dot-something
+    )''', re.VERBOSE)
 
 matches = []
 for groups in emailRegex.findall(openedContent):
