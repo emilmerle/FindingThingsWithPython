@@ -7,3 +7,6 @@ Feel free to contribute but please keep things easy to understand.
 - re (regular expressions)
 - sys (command line arguments)
 - os (functions for filepathes)
+
+## READMEs in other languages:
+- [German](README_de.md)
