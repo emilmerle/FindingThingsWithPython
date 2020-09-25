@@ -60,7 +60,7 @@ def main():
     matches = []
     # Find all phone numbers and store them in matches
     for groups in regexCompile.findall(openedContent):
-        phoneNumber = groups[0]
+        phoneNumber = ''.join(groups)
         matches.append(phoneNumber)
 
     openedFile.close()

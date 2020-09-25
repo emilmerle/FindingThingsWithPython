@@ -32,7 +32,7 @@ def main():
     text = str(pyperclip.paste())
     matches = []
     for groups in regexCompile.findall(text):
-        phoneNumber = groups[0]
+        phoneNumber = ''.join(groups)
         matches.append(phoneNumber)
 
     if len(matches) > 0:
