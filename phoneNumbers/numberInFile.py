@@ -47,7 +47,7 @@ openedContent = ""
 if(os.path.exists(argumentTwo) and os.path.isfile(argumentTwo)):
     # Try to open and read file
     try:
-        openedFile = open(argumentTwo, "r")
+        openedFile = open(argumentTwo, "r",encoding='ascii',errors='ignore')
         openedContent = openedFile.read()
     except OSError:
         exit("Could not open file")
