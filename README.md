@@ -19,3 +19,4 @@ See [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-crea
 
 ## READMEs in other languages:
 - [German](README_de.md)
+- [Hindi](README_hi.md)
