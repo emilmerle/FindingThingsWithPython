@@ -14,6 +14,7 @@ Feel free to contribute but please keep things easy to understand.
 3. Write your code
 4. Create a new branch
 5. Open a pull request
+
 See [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) for more information. 
 
 ## READMEs in other languages:
