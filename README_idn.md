@@ -9,5 +9,6 @@ Silahkan untuk berkonrtibusi. Harap tetap menjaga agar dapat tetap mudah dimenge
 - os (fungsi untuk filepathes (alur file))
 
 ## READMEs in other languages:
+- [English](README.md)
 - [German](README_de.md)
 - [Indonesia](README_idn.md)
