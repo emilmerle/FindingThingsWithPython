@@ -11,4 +11,3 @@ Silahkan untuk berkonrtibusi. Harap tetap menjaga agar dapat tetap mudah dimenge
 ## READMEs in other languages:
 - [English](README.md)
 - [German](README_de.md)
-- [Indonesia](README_idn.md)
