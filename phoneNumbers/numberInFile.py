@@ -14,10 +14,8 @@ germany = r'''(
     (\s|-|\.|/)? # separator (optional)
     (\d{7,9}) # 7 to 9 digits
     )'''
-spain = r"(^[98](\d{8}))"
-
 countryDict["germany"] = germany
-countryDict["spain"] = spain
+
 # Check if sys.argv[1] is given and in countryDict
 argumentOne = ""
 try:
@@ -27,7 +25,7 @@ except IndexError:
 
 if(argumentOne in countryDict):
     #Create regex object
-    regexCompile = re.compile(countryDict[argumentOne], re.VERBOSE|re.MULTILINE)
+    regexCompile = re.compile(countryDict[argumentOne], re.VERBOSE)
 else:
     exit("No number format for that country found")
 
@@ -65,7 +63,7 @@ for groups in regexCompile.findall(openedContent):
 openedFile.close()
 
 if len(matches) > 0:
-  #  pyperclip.copy(' -+- '.join(matches))
+    pyperclip.copy(' -+- '.join(matches))
     print("Phone number(s) found:")
     print('\n'.join(matches))
 else:
