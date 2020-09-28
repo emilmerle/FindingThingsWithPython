@@ -16,7 +16,7 @@
 4. नयी   branch बनाएं
 5. Pull request करें 
 
-अधिक जानकारी के लिए [इस ट्यूटोरियल] (https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) को  देखें |
+अधिक जानकारी के लिए [इस ट्यूटोरियल](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) को  देखें |
 
 ## अन्य भाषाओँ में  READMEs :
 - [English](README.md)
