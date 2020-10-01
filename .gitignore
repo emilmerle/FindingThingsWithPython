@@ -138,6 +138,5 @@ dmypy.json
 .pytype/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
-=======
 #Ignore enviroment files
 /env
