@@ -15,7 +15,7 @@
 4. قم بعمل فرع جديد 
 5. قم بعمل طلب سحب
 
-شاهد [هذا الشؤح](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) لمزيد من المعلومات. 
+شاهد [هذا الشرح](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) لمزيد من المعلومات. 
 
 
 ## READMEs in other languages:
