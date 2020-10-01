@@ -15,8 +15,9 @@ germany = r'''(
     (\s|-|\.|/)? # separator (optional)
     (\d{7,9}) # 7 to 9 digits
     )'''
+spain = r"(^[98](\d{8}))"
 countryDict["germany"] = germany
-
+countryDict["spain"] = spain
 
 # Check if sys.argv[1] in countryDict and create regex object
 argumentOne = ""
@@ -27,7 +28,7 @@ except IndexError:
 
 if(argumentOne in countryDict):
     #Create regex object
-    regexCompile = re.compile(countryDict[argumentOne], re.VERBOSE)
+    regexCompile = re.compile(countryDict[argumentOne], re.VERBOSE|re.MULTILINE)
 else:
     exit("No number format for that country found")
 
