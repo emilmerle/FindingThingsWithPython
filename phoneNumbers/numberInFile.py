@@ -10,7 +10,6 @@ Example:
 >>> numberInFile.py germany C:\\Users\\ExampleUser\\Documents\\phoneNumbers.txt
 """
 
-<<<<<<< HEAD
 from countries import countryDict
 import pyperclip
 import re
@@ -26,30 +25,6 @@ def main():
     except IndexError:
         exit("No argument given."
              " Try again with a country as an argument")
-=======
-#Create phone regex for country specific number format and add it to countryDict
-germany = r'''(
-    (\d{3}|\(\d{3}\))? # area code (optional)
-    (\s|-|\.|/)? # separator (optional)
-    (\d{7,9}) # 7 to 9 digits
-    )'''
-spain = r"(^[98](\d{8}))"
-
-countryDict["germany"] = germany
-countryDict["spain"] = spain
-# Check if sys.argv[1] is given and in countryDict
-argumentOne = ""
-try:
-    argumentOne = sys.argv[1]
-except IndexError:
-    exit("No argument given. Try again with a country as an argument")
-
-if(argumentOne in countryDict):
-    #Create regex object
-    regexCompile = re.compile(countryDict[argumentOne], re.VERBOSE|re.MULTILINE)
-else:
-    exit("No number format for that country found")
->>>>>>> 3c73d451606203216ef00f7bfb7a176bce5a8c43
 
     if(argumentOne in countryDict):
         # Create regex object
@@ -71,7 +46,6 @@ else:
 
     openedContent = ""
 
-<<<<<<< HEAD
     # Check if argumentTwo is a valid path and file
     if(os.path.exists(argumentTwo) and os.path.isfile(argumentTwo)):
         # Try to open and read file
@@ -90,18 +64,6 @@ else:
         matches.append(phoneNumber)
 
     openedFile.close()
-=======
-# Check if argumentTwo is a valid path and file
-if(os.path.exists(argumentTwo) and os.path.isfile(argumentTwo)):
-    # Try to open and read file
-    try:
-        openedFile = open(argumentTwo, "r",encoding='ascii',errors='ignore')
-        openedContent = openedFile.read()
-    except OSError:
-        exit("Could not open file")
-else:
-    exit("Given file does not exist: " + argumentTwo)
->>>>>>> 3c73d451606203216ef00f7bfb7a176bce5a8c43
 
     if len(matches) > 0:
         pyperclip.copy(' -+- '.join(matches))
@@ -111,14 +73,5 @@ else:
         print('No phone numbers or email addresses found.')
 
 
-<<<<<<< HEAD
 if __name__ == "__main__":
     main()
-=======
-if len(matches) > 0:
-    pyperclip.copy(' -+- '.join(matches))
-    print("Phone number(s) found:")
-    print('\n'.join(matches))
-else:
-    print('No phone numbers or email addresses found.')
->>>>>>> 3c73d451606203216ef00f7bfb7a176bce5a8c43
