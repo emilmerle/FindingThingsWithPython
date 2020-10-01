@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 pyperclip == 1.8.0
-=======
-pyperclip==1.8.0
->>>>>>> 3c73d451606203216ef00f7bfb7a176bce5a8c43

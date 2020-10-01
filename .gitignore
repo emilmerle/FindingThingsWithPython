@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
@@ -143,4 +141,3 @@ dmypy.json
 =======
 #Ignore enviroment files
 /env
->>>>>>> 3c73d451606203216ef00f7bfb7a176bce5a8c43
