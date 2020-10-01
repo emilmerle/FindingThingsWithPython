@@ -9,8 +9,8 @@ Feel free to contribute but please keep things easy to understand.
 - os (functions for filepathes)
 
 ## How to contribute:
-1. Fork this repository.
-2. Clone the forked repository.
+1. Fork this repository
+2. Clone the forked repository
 3. Write your code
 4. Create a new branch
 5. Open a pull request
