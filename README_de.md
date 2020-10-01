@@ -8,5 +8,16 @@ Du kannst gerne etwas beitragen, aber bitte halte die Dinge leicht und verständ
 - sys (Kommandozeilenargumente)
 - os (Funktionen für die Dateipfade)
 
+## So trägst du etwas bei:
+1. Dieses Repository forken
+2. Klonen des geforkten Repositories
+3. Neuen Code hinzufügen
+4. Neuen Branch erstellen
+5. Pull-Request eröffnen
+
+[Dieses Tutorial](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) beinhaltet noch weiterführende Informationen.
+
 ## READMEs in anderen Sprachen:
 - [English](README.md)
+- [Hindi](README_hi.md)
+- [Indonesia](README_idn.md)
