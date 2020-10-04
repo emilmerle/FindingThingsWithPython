@@ -22,5 +22,4 @@
 - [Hindi](README_hi.md)
 - [Indonesia](README_idn.md)
 - [Arabic](README_ar.md)
-- [Russian](README_ru.md)
 - [English](README.md)
