@@ -21,4 +21,6 @@ See [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-crea
 - [German](README_de.md)
 - [Hindi](README_hi.md)
 - [Indonesia](README_idn.md)
+- [Arabic](README_ar.md)
+- [Russian](README_ru.md)
 - [Polish](README_pl.md)
