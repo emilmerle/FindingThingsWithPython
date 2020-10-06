@@ -3,7 +3,7 @@
 # Usage: Copy some text and call the program
 # Example: >>> alliterationInClipboard.py
 
-import allieration
+import alliteration
 import pyperclip
 
 
@@ -11,7 +11,7 @@ def main():
     # Find matches in clipboard text.
     text = " " + str(pyperclip.paste())
     matches = []
-    for groups in allieration.regexp.findall(text):
+    for groups in alliteration.regexp.findall(text):
         alliterations = groups[0][1:]  # [1:] removes the space character
         matches.append(alliterations)
 
