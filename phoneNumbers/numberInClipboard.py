@@ -65,9 +65,12 @@ germany = r'''(
     (\d{7,9}) # 7 to 9 digits
     )'''
 spain = r"(^[98](\d{8}))"
+
+nigeria = r"(^[0]\d{10}$)|(^[\+]?[234]\d{12}$)"
+
 countryDict["germany"] = germany
 countryDict["spain"] = spain
-
+countryDict["nigeria"] = nigeria
 # Check if sys.argv[1] in countryDict and create regex object
 argumentOne = ""
 try:
