@@ -25,3 +25,4 @@ See [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-crea
 - [Russian](README_ru.md)
 - [Polish](README_pl.md)
 - [Igbo](README_igbo.md)
+- [Spanish](README_es.md)
