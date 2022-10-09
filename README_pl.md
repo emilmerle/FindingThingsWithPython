@@ -18,6 +18,11 @@ Nie krępuj się, ale proszę postaraj się, aby wszystko było łatwe do zrozum
 Więcej informacji znajdziesz w [tym samouczku](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github).
 
 ## README w innych językach:
-- [Niemiecki](https://github.com/nokimono/FindingThingsWithPython/blob/master/README_de.md)
-- [Hinduski](https://github.com/nokimono/FindingThingsWithPython/blob/master/README_hi.md)
-- [Indonezja](https://github.com/nokimono/FindingThingsWithPython/blob/master/README_idn.md)
+- [English](README.md)
+- [German](README_de.md)
+- [Hindi](README_hi.md)
+- [Indonesia](README_idn.md)
+- [Arabic](README_ar.md)
+- [Russian](README_ru.md)
+- [Igbo](README_igbo.md)
+- [Spanish](README_es.md)
