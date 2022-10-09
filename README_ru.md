@@ -18,8 +18,11 @@
 Посмотрите [это руководство](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) для получения более детального объяснения. 
 
 ## READMEs на других языках:
+- [English](README.md)
 - [German](README_de.md)
 - [Hindi](README_hi.md)
 - [Indonesia](README_idn.md)
 - [Arabic](README_ar.md)
-- [English](README.md)
+- [Polish](README_pl.md)
+- [Igbo](README_igbo.md)
+- [Spanish](README_es.md)

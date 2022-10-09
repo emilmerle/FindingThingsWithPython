@@ -18,6 +18,7 @@ Eres libre de contribuir pero porfavor mantén las cosas fácil de entender.
 Para más información mira éste tutorial [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
 
 ## READMEs en otras lenguas:
+- [English](README.md)
 - [German](README_de.md)
 - [Hindi](README_hi.md)
 - [Indonesia](README_idn.md)
@@ -25,4 +26,3 @@ Para más información mira éste tutorial [this tutorial](https://www.digitaloc
 - [Russian](README_ru.md)
 - [Polish](README_pl.md)
 - [Igbo](README_igbo.md)
-- [Spanish](README_es.md)
