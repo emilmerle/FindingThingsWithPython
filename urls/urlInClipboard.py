@@ -15,11 +15,11 @@ def main():
         matches.append(url_match)
 
     if len(matches) > 0:
-        pyperclip.copy(' -+- '.join(matches))
+        pyperclip.copy(" -+- ".join(matches))
         print("Url(s) found:")
-        print('\n'.join(matches))
+        print("\n".join(matches))
     else:
-        print('No Url found.')
+        print("No Url found.")
 
 
 if __name__ == "__main__":

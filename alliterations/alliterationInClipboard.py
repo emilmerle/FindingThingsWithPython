@@ -16,11 +16,11 @@ def main():
         matches.append(alliterations)
 
     if len(matches) > 0:
-        pyperclip.copy(' -+- '.join(matches))
+        pyperclip.copy(" -+- ".join(matches))
         print("Alliteration(s) found:")
-        print('\n'.join(matches))
+        print("\n".join(matches))
     else:
-        print('No alliteration found.')
+        print("No alliteration found.")
 
 
 if __name__ == "__main__":

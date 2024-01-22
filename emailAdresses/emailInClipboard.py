@@ -16,11 +16,11 @@ def main():
         matches.append(emails)
 
     if len(matches) > 0:
-        pyperclip.copy(' -+- '.join(matches))
+        pyperclip.copy(" -+- ".join(matches))
         print("Email address(es) found:")
-        print('\n'.join(matches))
+        print("\n".join(matches))
     else:
-        print('No email address found.')
+        print("No email address found.")
 
 
 if __name__ == "__main__":

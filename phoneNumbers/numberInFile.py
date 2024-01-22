@@ -23,10 +23,9 @@ def main():
     try:
         argumentOne = sys.argv[1]
     except IndexError:
-        exit("No argument given."
-             " Try again with a country as an argument")
+        exit("No argument given." " Try again with a country as an argument")
 
-    if(argumentOne in countryDict):
+    if argumentOne in countryDict:
         # Create regex object
         regexCompile = re.compile(countryDict[argumentOne], re.VERBOSE)
     else:
@@ -37,17 +36,16 @@ def main():
     try:
         argumentTwo = sys.argv[2]
     except IndexError:
-        exit("No second argument given."
-             " Try again with a file path as an argument")
+        exit("No second argument given." " Try again with a file path as an argument")
 
     # Make absolute path if given path is a relative path
-    if(not os.path.isabs(argumentTwo)):
+    if not os.path.isabs(argumentTwo):
         argumentTwo = os.path.abspath(argumentTwo)
 
     openedContent = ""
 
     # Check if argumentTwo is a valid path and file
-    if(os.path.exists(argumentTwo) and os.path.isfile(argumentTwo)):
+    if os.path.exists(argumentTwo) and os.path.isfile(argumentTwo):
         # Try to open and read file
         try:
             openedFile = open(argumentTwo, "r")
@@ -60,17 +58,17 @@ def main():
     matches = []
     # Find all phone numbers and store them in matches
     for groups in regexCompile.findall(openedContent):
-        phoneNumber = ''.join(groups)
+        phoneNumber = "".join(groups)
         matches.append(phoneNumber)
 
     openedFile.close()
 
     if len(matches) > 0:
-        pyperclip.copy(' -+- '.join(matches))
+        pyperclip.copy(" -+- ".join(matches))
         print("Phone number(s) found:")
-        print('\n'.join(matches))
+        print("\n".join(matches))
     else:
-        print('No phone numbers or email addresses found.')
+        print("No phone numbers or email addresses found.")
 
 
 if __name__ == "__main__":
